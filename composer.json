@@ -1,0 +1,60 @@
+{
+  "name": "discourse/wp-discourse",
+  "type": "wordpress-plugin",
+  "license": "GPL-3.0-only",
+  "description": "WordPress plugin that allows you to use Discourse as a community engine for your WordPress blog.",
+  "homepage": "https://github.com/discourse/wp-discourse",
+  "authors": [
+    {
+      "name": "Sam Saffron",
+      "homepage": "https://github.com/SamSaffron"
+    },
+    {
+      "name": "Robin Ward",
+      "homepage": "https://github.com/eviltrout"
+    }
+  ],
+  "keywords": [
+    "wordpress",
+    "discourse"
+  ],
+  "support": {
+    "issues": "https://github.com/discourse/wp-discourse/issues"
+  },
+  "require": {
+    "php": ">=5.4",
+    "composer/installers": "^1.0"
+  },
+  "require-dev": {
+    "squizlabs/php_codesniffer": "3.*",
+    "dealerdirect/phpcodesniffer-composer-installer": "^1.0.0",
+    "10up/wp_mock": "0.4.2",
+    "phpunit/phpunit": "9.6",
+    "phpunit/php-code-coverage": "^9.2.13",
+    "phpcompatibility/php-compatibility": "*",
+    "wp-coding-standards/wpcs": "^3.0",
+    "monolog/monolog": "^1.25",
+    "yoast/phpunit-polyfills": "^1.0.1",
+    "dms/phpunit-arraysubset-asserts": "^0.5.0"
+  },
+  "minimum-stability": "dev",
+  "autoload": {
+    "classmap": [
+      "vendor_namespaced/"
+    ]
+  },
+  "autoload-dev": {
+    "classmap": [
+      "lib/",
+      "admin/",
+      "tests/",
+      "vendor_namespaced/"
+    ]
+  },
+  "config": {
+    "allow-plugins": {
+      "dealerdirect/phpcodesniffer-composer-installer": true,
+      "composer/installers": true
+    }
+  }
+}
